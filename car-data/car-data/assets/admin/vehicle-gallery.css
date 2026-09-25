@@ -1,0 +1,44 @@
+.automotive-gallery__preview {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+	gap: 12px;
+	margin: 16px 0;
+}
+
+.automotive-gallery__item {
+	position: relative;
+	aspect-ratio: 4 / 3;
+	overflow: hidden;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	background: #f6f7f7;
+}
+
+.automotive-gallery__image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.automotive-gallery__remove {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	width: 28px;
+	height: 28px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: #1d2327;
+	color: #fff;
+	font-size: 20px;
+	line-height: 26px;
+	cursor: pointer;
+}
+
+.automotive-gallery__actions {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
